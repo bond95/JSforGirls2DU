@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" 
+          content="text/html; charset=UTF-8" />
+    <title>Demo page</title>
+    <script>
+	//--------------------------------------------------------------
+	// Pište svůj kód sem!!!!!!!
+	//--------------------------------------------------------------
+        function handleLoad() {
+		document.getElementById('first').innerHTML = 'fib(4) - Expected: 0,1,1,2,3&emsp;&emsp;Actual: ' + fib(4).toString();
+		document.getElementById('second').innerHTML = 'fib(0) - Expected: 0&emsp;&emsp;Actual: ' + fib(0).toString();
+		document.getElementById('third').innerHTML = 'fib(1) - Expected: 0,1&emsp;&emsp;Actual: ' + fib(1).toString();
+        }
+    </script>
+  </head>
+
+  <body onLoad='handleLoad()'>
+    <div id='first'></div>
+    <div id='second'></div>
+    <div id='third'></div>
+  </body>
+</html>
+
+
